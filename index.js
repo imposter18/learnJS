@@ -1,21 +1,20 @@
 " use strict ";
 
-// alert('1');
+let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "2");
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors:{},
+    genres:[],
+    privat: false
+};
 
-// const result = confirm('Are you here');
-// console.log(result)
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько вы его оцените?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько вы его оцените?', '');
 
-// const answer = prompt('Вам есть 18?', '18');
-// console.log( +answer + 5);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-// const answers = [];
-
-// answers[0] = prompt('Как ваше имя?', '' );
-// answers[1] = prompt('Как ваше фамилия?', '' );
-// answers[2] = prompt('Сколько вам лет?', '' );
-
-// document.write(answers);
-
-const category = 'toys';
-
-console.log(`https://someurl.com/${category}/5`);
+console.log(personalMovieDB);
